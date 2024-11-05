@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+/*primary*/
+--Lightred: hsl(0, 100%, 67%);
+--Orangeyyellow: hsl(39, 100%, 56%);
+--Greenteal: hsl(166, 100%, 37%);
+--Cobaltblue: hsl(234, 85%, 45%);
+
+/*Gradients*/
+
+--Lightslatebluebackground: hsl(252, 100%, 67%);
+--Lightroyalbluebackground: hsl(241, 81%, 54%);
+
+--Violetbluecircle: hsla(256, 72%, 46%, 1);
+--Persianbluecircle: hsla(241, 72%, 46%, 0);
+
+
+
+/*Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Hanken Grotesk;
+}
+.container{
+    display: flex;
+    background-color:white;
+    height:360px;
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 12px 10px 17px var(--Paleblue), 5px 5px 20px 1px var(--White);
+}
+/*everything score*/
+.score{
+    width: 250px;
+    height: 360px;
+    border-radius: 30px;
+    background-image: linear-gradient(to top,  var(--Lightroyalbluebackground), var(--Lightslatebluebackground));
+}
+.score h2{
+    color: var(--Paleblue);
+    text-align: center;
+}
+.gangan-score{
+    width: 10rem;
+    height:10rem ;
+    background-image:linear-gradient(to top, var(--Persianbluecircle), var(--Violetbluecircle));
+    border-radius: 100%;
+    margin: auto;
+    align-content:center;
+    
+}
+.gangan-score h1{
+    text-align: center;
+    color: var(--Paleblue);
+    font-weight:1000 ;
+    font-size: 40px;
+}
+.gangan-score p{
+    text-align: center;
+    color: var(--Paleblue);
+    margin-top: -20px;
+}
+.score h3{
+    text-align: center;
+    color: var(--Paleblue);
+}
+.score p{
+    text-align: center;
+    color: var(--Paleblue);
+    font-weight: 200;
+    font-size: 12px;
+}
+
+
+
+/*everything reaction*/
+.reaction{
+    width: 250px;
+    height: 360px;
+}
+.reaction h2{
+    margin: 10px 20px;
+}
+.img1 {
+    width: 200px;
+    background-color:rgba(255, 255, 0, 0.22) ;
+    border-radius: 10px;
+    color: var(--Orangeyyellow);
+}
+.img2 {
+    width: 200px;
+    background-color: rgba(255, 0, 0, 0.231);
+    border-radius: 10px;
+    color: red;
+}
+.img3 {
+    width: 200px;
+    background-color: rgba(172, 255, 47, 0.234);
+    border-radius: 10px;
+    color: green;
+}
+.img4 {
+    width: 200px;
+    background-color: rgba(0, 0, 255, 0.36);
+    border-radius: 10px;
+    color: blue;
+}
+.img {
+   margin: 20px;
+   padding: 5px;
+}
+.num {
+    color: black;
+    padding-left: 45px;
+    font-weight: 500;
+}
+.button{
+    width: 190px;
+    background-color:rgb(49, 49, 49);
+    text-align: center;
+    margin:40px 25px;
+    padding: 6px;
+    border-radius: 30px;
+}
+.button a{
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+}
+.button:hover{
+    background-image: linear-gradient(to top, var(--Lightroyalbluebackground), var(--Lightslatebluebackground));
+    font-weight: 600;
+}
+@media (max-width:578px){
+    body{
+        flex-direction: column;
+        margin: 0;
+    }
+    .container{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .score{
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+        border-radius: 0 0 20px 20px;
+    }
+    .score h2 {
+        color: var(--Lightlavender);
+        font-size: 20px;
+    }
+    .gangan-score{
+        font-size: 70px;
+        padding-bottom:;
+    }
+    .gangan-score h1 {
+        text-align: center;
+        font-size: 70px;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    .gangan-score p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .score h3{
+        font-size: 25px;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+    .score p{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .reaction{
+        width: 100%;
+    }
+    .img{
+        margin-left: 40px;
+        width: 300px;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .num{
+        padding-left: 120px;
+    }
+    .button{
+        width: 300px;
+        padding: 20px;
+        font-size: ;
+    }
+    .button a{
+        font-size: 20px;
+    }
+}
